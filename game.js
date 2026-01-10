@@ -22,7 +22,7 @@ let gameRunning = true;
 const gameOverScreen = document.getElementById("gameOverScreen");
 const finalScoreText = document.getElementById("finalScore");
 const restartBtn = document.getElementById("restartBtn");
-const gamesound = document.getElementById('game-sound')
+const gamesound = document.getElementById('game-sound');
 
 // ================= PLAYER =================
 const player = {
@@ -33,7 +33,6 @@ const player = {
   velocity: 0,
   gravity: 0.5,
   jump: -8,
-
 };
 
 // ================= OBSTACLES =================
@@ -57,6 +56,12 @@ document.addEventListener("keydown", e => {
 
 document.addEventListener("click", jump);
 
+// ✅ MOBILE TOUCH SUPPORT (ADDED)
+document.addEventListener("touchstart", function (e) {
+  e.preventDefault();
+  jump();
+}, { passive: false });
+
 // ================= COLLISION =================
 function isColliding(a, b) {
   return (
@@ -74,7 +79,7 @@ function gameOver() {
   gameRunning = false;
   gameOverSound.currentTime = 0;
   gameOverSound.play();
-  gamesound.pause()
+  gamesound.pause();
 
   finalScoreText.textContent = "Score: " + score;
   gameOverScreen.classList.remove("hidden");
@@ -147,6 +152,5 @@ function update() {
   frame++;
   requestAnimationFrame(update);
 }
-
 
 update();
