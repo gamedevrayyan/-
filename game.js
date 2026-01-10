@@ -57,7 +57,7 @@ document.addEventListener("keydown", e => {
 document.addEventListener("click", jump);
 
 // ✅ MOBILE TOUCH SUPPORT (ADDED)
-document.addEventListener("touchstart", function (e) {
+canvas.addEventListener("touchstart", function (e) {
   e.preventDefault();
   jump();
 }, { passive: false });
@@ -154,3 +154,4 @@ function update() {
 }
 
 update();
+
