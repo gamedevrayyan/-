@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ഡക്കൻ ചാട്ടം </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="gameCanvas" width="400" height="600">
+  </canvas>
+  <div id="gameOverScreen" class="overlay hidden">
+    <div class="game-over-box">
+      <h1>Game Over!!</h1>
+      <p id="finalScore">Score: 0</p>
+      <button id="restartBtn">Restart</button>
+      <a href="index.html">Back to Home</a>
+    </div>
+  </div>
+
+  <audio src="assets/sayip.mp3" id="game-sound" autoplay loop></audio>
+
+  <script src="game.js"></script>
+</body>
+
+</html>
