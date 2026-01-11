@@ -28,8 +28,8 @@ const gamesound = document.getElementById('game-sound');
 const player = {
   x: 50,
   y: 10,
-  width: 60,
-  height: 60,
+  width: 80,
+  height: 80,
   velocity: 0,
   gravity: 0.5,
   jump: -8,
@@ -154,6 +154,7 @@ function update() {
 }
 
 update();
+
 
 
 
