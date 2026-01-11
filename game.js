@@ -26,8 +26,8 @@ const gamesound = document.getElementById('game-sound');
 
 // ================= PLAYER =================
 const player = {
-  x: 50,
-  y: 10,
+  x: 100,
+  y: 50,
   width: 80,
   height: 80,
   velocity: 0,
@@ -154,6 +154,7 @@ function update() {
 }
 
 update();
+
 
 
 
