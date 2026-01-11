@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 
 // ================= IMAGES =================
 const playerImg = new Image();
-playerImg.src = "assets/player2-removebg-preview.png";
+playerImg.src = "assets/player3.png";
 
 const obstacleImg = new Image();
 obstacleImg.src = "assets/obstacle.jpg";
@@ -154,6 +154,7 @@ function update() {
 }
 
 update();
+
 
 
 
