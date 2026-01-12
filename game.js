@@ -47,7 +47,7 @@ function jump() {
   if (!gameRunning) return;
   player.velocity = player.jump;
   jumpSound.currentTime = 0;
-  jumpSound.play();
+  //jumpSound.play();
 }
 
 document.addEventListener("keydown", e => {
@@ -154,6 +154,7 @@ function update() {
 }
 
 update();
+
 
 
 
