@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 
 // ================= IMAGES =================
 const playerImg = new Image();
-playerImg.src = "assets/player1.png";
+playerImg.src = "assets/player.png";
 
 const obstacleImg = new Image();
 obstacleImg.src = "assets/obstacle.jpg";
@@ -26,10 +26,10 @@ const gamesound = document.getElementById('game-sound');
 
 // ================= PLAYER =================
 const player = {
-  x: 100,
-  y: 50,
-  width: 95,
-  height: 95,
+  x: 50,
+  y: 10,
+  width: 50,
+  height: 50,
   velocity: 0,
   gravity: 0.5,
   jump: -8,
@@ -154,6 +154,7 @@ function update() {
 }
 
 update();
+
 
 
 
