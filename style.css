@@ -11,20 +11,29 @@ body {
 }
 
 canvas {
-  border: 2px solid #000;
+  display: block;
   background-image: url('assets/menubg.jpg');
-  width: 100%;
-  max-width: 400px;      /* keeps it reasonable on PC */
-  height: auto;
-  aspect-ratio: 9 / 16;
 }
 
-@media (max-width:500px) {
-  canvas{
-    width: 100%;
+/* Mobile fullscreen */
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+    padding: 0;
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: block; /* REMOVE flex centering */
+    background: black; /* optional */
+  }
+
+  canvas {
+    width: 100vw;
+    height: 100vh;
+    border: none;
   }
 }
+
 .menu-container{
     height: 100vh;
     width: 100%;
@@ -130,5 +139,6 @@ canvas {
 .hidden {
   display: none;
 }
+
 
 
