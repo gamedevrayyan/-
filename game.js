@@ -42,6 +42,14 @@ const gap = 150;
 let frame = 0;
 let score = 0;
 
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
 // ================= INPUT =================
 function jump() {
   if (!gameRunning) return;
@@ -154,6 +162,7 @@ function update() {
 }
 
 update();
+
 
 
 
