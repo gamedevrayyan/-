@@ -3,10 +3,10 @@ const ctx = canvas.getContext("2d");
 
 // ================= IMAGES =================
 const playerImg = new Image();
-playerImg.src = "assets/player.png";
+playerImg.src = "assets/laude-removebg-preview.png";
 
 const obstacleImg = new Image();
-obstacleImg.src = "assets/obstacle.jpg";
+obstacleImg.src = "assets/obstacle.png";
 
 // ================= SOUNDS =================
 const jumpSound = new Audio("assets/Recording.m4a");
